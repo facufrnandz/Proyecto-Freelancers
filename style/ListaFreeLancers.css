@@ -1,0 +1,38 @@
+#barra-superior{
+    background-color: #1d1c1c;
+    box-shadow: 2px 2px 5px #3d3b3b;
+    height: 215px;
+}
+
+#logo{
+    padding-top: 10px;
+}
+
+.texto-de-navegacion{
+    color: white;
+    margin-left: 2px;
+    display: inline-block;
+}
+
+#focus{
+    text-decoration: underline;
+    color: rgb(65, 65, 255);
+}
+body{
+    background-color: #EAEAEA;
+}
+
+.cerrar-sesion{
+    display: inline-block;
+}
+
+#datos{
+    background-color: #1d1c1c;
+    box-shadow: 2px 2px 5px #3d3b3b;
+    width: 1000px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    color: white;
+}

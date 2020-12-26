@@ -1,0 +1,68 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #1d1c1c;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[id="usuarioReg"] {
+  margin-bottom: 2px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: rgba(14, 14, 14, 0.904);
+  border-color: #1d1c1c;
+  box-shadow: 0.5px 0.5px 3px rgb(39, 39, 39);
+}
+.form-signin input[id="passwordReg"] {
+  margin-bottom: 6px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  background-color: rgba(14, 14, 14, 0.904);
+  border-color: #1d1c1c;
+  box-shadow: 0.5px 0.5px 3px rgb(39, 39, 39);
+}
+.form-signin .form-control::placeholder{
+  color: rgb(170, 170, 170);
+}
+
+.form-signin input[type="submit"]{
+  background-color: #2b0548;
+}
+
+select[id="tipousuariosReg"]{
+  background-color: rgb(243, 243, 243);
+  border-color: black;
+  margin-bottom: 10px;
+}
+
+a{
+  font-style: italic;
+}

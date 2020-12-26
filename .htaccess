@@ -1,0 +1,25 @@
+RewriteEngine on
+
+RewriteRule ^cerrarsesion$ controllers/CerrarSesion.php
+
+RewriteRule ^login$ controllers/Login.php
+
+RewriteRule ^registro$ controllers/Register.php
+
+RewriteRule ^home-empleador$ controllers/HomeEmpleador.php
+
+RewriteRule ^home-empleado$ controllers/HomeEmpleado.php
+
+RewriteRule ^entrevistas-freelancer$ controllers/EntrevistasEmpleado.php
+
+RewriteRule ^entrevistas-empleador$ controllers/EntrevistasEmpleador.php
+
+RewriteRule ^edicion-freelancer$ controllers/EdicionPerfilEmpleado.php
+
+RewriteRule ^edicion-empleador$ controllers/EdicionPerfilEmpleador.php
+
+RewriteRule ^edicion-curriculum$ controllers/EdicionCv.php
+
+RewriteRule ^contratar$ controllers/Contratar.php
+
+RewriteRule ^lista-freelancers$ controllers/ListaFreelancers.php
