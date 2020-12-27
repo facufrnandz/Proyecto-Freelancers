@@ -35,7 +35,6 @@
             $ape = $this->db->escape($ape);
             $ape = $this->db->escapeWildcards($ape);
             $email = $this->db->escape($email);
-            $email = $this->db->escapeWildcards($email);
 
             if (!ctype_digit($tel)) throw new ValidacionException('Error tel empleador - Creacion Empleado');
             if(strlen($tel) < 10 || strlen($tel) > 11) throw new ValidacionException('Error tel empleador - Creacion Empleado');
@@ -62,7 +61,6 @@
             $ape = $this->db->escape($ape);
             $ape = $this->db->escapeWildcards($ape);
             $email = $this->db->escape($email);
-            $email = $this->db->escapeWildcards($email);
 
             if (!ctype_digit($tel)) throw new ValidacionException('Error Tel Empleador - Modficacion Empleador');
             if ($tel < 0 && $tel < 11) throw new ValidacionException('Error Tel Empleador - Modificacion Empleador');

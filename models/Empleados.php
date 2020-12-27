@@ -47,12 +47,11 @@
             $ape = $this->db->escape($ape);
             $ape = $this->db->escapeWildcards($ape);
             $email = $this->db->escape($email);
-            $email = $this->db->escapeWildcards($email);
             $nac = $this->db->escape($nac);
             $nac = $this->db->escapeWildcards($nac);
 
             if (!ctype_digit($tel)) throw new ValidacionException('Error tel empleado - Creacion Empleado');
-            if ($tel < 0 && $tel < 11) throw new ValidacionException('Error tel empleado - Creacion Empleado');
+            if ($tel < 0 && (strlen($tel) < 11)) throw new ValidacionException('Error tel empleado - Creacion Empleado');
 
             if (!ctype_digit($idusuario)) throw new ValidacionException('Error idusuario empleado - Creacion Empleado');
             if ($idusuario < 0) throw new ValidacionException('Error idusuario empleado - Creacion Empleado');
@@ -76,12 +75,11 @@
             $ape = $this->db->escape($ape);
             $ape = $this->db->escapeWildcards($ape);
             $email = $this->db->escape($email);
-            $email = $this->db->escapeWildcards($email);
             $nac = $this->db->escape($nac);
             $nac = $this->db->escapeWildcards($nac);
 
             if (!ctype_digit($tel)) throw new ValidacionException('Error tel empleado - Modficacion Empleado');
-            if ($tel < 0 && $tel < 11) throw new ValidacionException('Error tel empleado - Modificacion Empleado');
+            if ($tel < 0 && (strlen($tel) < 11)) throw new ValidacionException('Error tel empleado - Modificacion Empleado');
 
             if (!ctype_digit($idusuario)) throw new ValidacionException('Error idusuario empleado - Modificacion Empleado');
             if ($idusuario < 0) throw new ValidacionException('Error idusuario empleado - Modificacion Empleado');
@@ -185,7 +183,6 @@
             if(strlen($experiencia) > 150 ) throw new ValidacionException('Error max caracteres - Modificacion CV');
             
             $nom = $this->db->escape($experiencia);
-            $nom = $this->db->escapeWildcards($experiencia);
 
             if(!empty($experiencia)){
 
